@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { Container, Row } from 'reactstrap'
+import Header from "./Header"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Footer from "./Footer"
+import Countries from "./Countries"
+
+
+
+
+
+export default class App extends React.Component {
+
+
+
+    render() {
+
+        return (
+            <div>
+                <Container>
+
+                    <Row><Header/></Row>
+                    <Row><Countries/></Row>
+
+        
+                    <Row><Footer/></Row>
+
+                </Container>
+            </div>
+        )
+    }
 }
 
-export default App;
+
+
+
+
+
+
+
